@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router,Route,Routes,Link} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import Home from './Components/Home';
 import AddBenificiary from './Components/AddBnificiary';
 import EditBenificiary from './Components/EditBenificiary';

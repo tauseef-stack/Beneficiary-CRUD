@@ -1,5 +1,4 @@
 import { listOfAllBeneficieries } from "../../data";
-import { toast } from "react-toastify";
 
 const initialState = {
     beneficiaryList:listOfAllBeneficieries || null,
