@@ -1,0 +1,223 @@
+.form-container {
+    background-color: #fff;
+    box-shadow: -2px 0px 24px rgba(0, 0, 0, 0.15);
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25%;
+}
+.form-container button:hover {
+    box-shadow: none;
+}
+.form-container button:disabled {
+    cursor: not-allowed;
+}
+.form-container .heading, .form-container .footer {
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+    background-color: #f8fafc;
+
+}
+.form-container .heading {
+    border-bottom: 1px solid #d1d5db;
+}
+.form-container .heading h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 1.4rem;
+}
+.form-container .heading .profile-options-cross-btn {
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.4rem;
+}
+.form-container .form {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+}
+.form-container .form select {
+    -moz-appearance: none;
+   /* Firefox */
+    -webkit-appearance: none;
+   /* Safari and Chrome */
+    appearance: none;
+}
+.form-container .form .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.63158px solid #d1d5db;
+    background: linear-gradient(0deg, #f1f5f9, #f1f5f9);
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.6s;
+    margin-top: 4rem;
+}
+.form-container .form .profile-image img {
+    width: 100%;
+    transition: all 0.3s;
+}
+.form-container .form .overlay {
+    background-color: #f1f5f9;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 6.3rem;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.form-container .form .overlay:hover {
+    border: 2px solid #1e40af;
+}
+.form-container .form .overlay:hover .upload-icon path {
+    fill: #1e40af;
+}
+.form-container .form .overlay .upload-icon path {
+    fill: #1e293b;
+}
+.form-container .form form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.form-container .form .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-start;
+
+}
+.form-container .form .input-section input {
+    width:94%;
+    border-color: #d0d5dd !important;
+}
+.form-container .form .input-section .border-red {
+    border: 1px solid red !important;
+}
+.form-container .form .input-section .error .profile_section_industry__control, .form-container .form .input-section .error .profile_section_country__control, .form-container .form .input-section .error .profile_section_phone_country_code__control {
+    border-color: red;
+}
+.form-container .form .input-section input[type="number"]::-webkit-outer-spin-button, .form-container .form .input-section input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-container .form .input-section input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.form-container .form .input-section input, .form-container .form .input-section select {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 1em;
+    font-size: 1.3rem;
+}
+.form-container .form .input-section :is(input, select):focus {
+    outline: none;
+}
+.form-container .form .input-section input::placeholder {
+    color: #bebebe;
+}
+.form-container .form .input-section > div#phone-number {
+    display: flex;
+    position: relative;
+}
+.form-container .form .input-section > div#phone-number > select {
+    min-width: 5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #d0d5dd;
+}
+.form-container .form .input-section > div#phone-number > input {
+    flex: 1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+.form-container .form .input-section > div#phone-number > svg {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(50%, -50%);
+}
+.form-container .form .input-section > div#phone-number > svg > path {
+    fill: #667085;
+}
+.form-container .form .input-section > select + svg {
+    position: absolute;
+    top: 50%;
+    left: 88%;
+    transform: translate(50%, 115%);
+}
+.form-container .form .input-section > select + svg > path {
+    fill: #667085;
+}
+.form-container .form .input-section > select.border-red + svg {
+    top: 40%;
+}
+.form-container .footer {
+    border-top: 1px solid #d1d5db;
+}
+.form-container .footer button{
+    padding: 0.5em 1.5em;
+    background-color: #536ce1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container .footer button:disabled {
+    cursor: not-allowed;
+}
+.form-container .footer .profile-options-cancel-btn, .form-container .footer .profile-options-update-btn {
+    background: transparent;
+    cursor: pointer;
+}
+.form-container .footer .profile-options-cancel-btn {
+    color: #ef4444;
+}
+.form-container .footer .profile-options-update-btn {
+    background-color: #e2e8f0;
+    color: #94a3b8;
+    margin-right: 1.4rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.form-container .footer .profile-options-logout {
+    margin-left: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b82f6;
+    cursor: pointer;
+}
+.err-msg {
+    color:red;
+    padding: 0;
+    margin: 0;
+}
+
+.button-back-color-enabled {
+ background: "#536CE1";
+ color:#fff
+}
+
+.button-back-color-disabled {
+    background: "#E2E8F0" !important;
+    color:#94A3B8 !important
+}
+
